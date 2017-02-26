@@ -111,7 +111,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="videoPreviewImage" destination="cZg-wJ-Xud" id="drI-VU-wVw"/>
+                                            <outlet property="videoPreviewImage" destination="XNL-Ee-Lz9" id="ODG-yz-nut"/>
                                             <outlet property="videoTitle" destination="wYv-aa-tdm" id="GEN-0K-3b4"/>
                                         </connections>
                                     </tableViewCell>
@@ -160,14 +160,30 @@
                                     <constraint firstAttribute="height" constant="329" id="gJA-0Q-oWh"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WB-DW-eLi">
+                                <rect key="frame" x="16" y="383" width="343" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="mxi-CC-jgu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xGg-HR-x0p" firstAttribute="leading" secondItem="a5X-QB-alV" secondAttribute="leading" id="4Ii-B7-HWl"/>
+                            <constraint firstItem="4WB-DW-eLi" firstAttribute="trailing" secondItem="a5X-QB-alV" secondAttribute="trailingMargin" id="5fW-bS-0mi"/>
+                            <constraint firstItem="4WB-DW-eLi" firstAttribute="leading" secondItem="a5X-QB-alV" secondAttribute="leadingMargin" id="Zj3-ta-YhT"/>
                             <constraint firstAttribute="trailing" secondItem="xGg-HR-x0p" secondAttribute="trailing" id="l8m-Fr-xjd"/>
+                            <constraint firstItem="4WB-DW-eLi" firstAttribute="top" secondItem="xGg-HR-x0p" secondAttribute="bottom" constant="54" id="vR0-ST-WnW"/>
                             <constraint firstItem="xGg-HR-x0p" firstAttribute="top" secondItem="a5X-QB-alV" secondAttribute="top" id="yJh-9F-jdQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="4WB-DW-eLi" id="NrM-b3-JWC"/>
+                        <outlet property="webView" destination="xGg-HR-x0p" id="Rhx-pb-IuF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE8-f8-lTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
